@@ -200,6 +200,12 @@ body{
 .categories-section {
   padding: 40px 20px;
   text-align: center;
+  background-color: #f7f9f3;
+}
+.categories-section{
+    margin-bottom: 30px;
+    font-size: 2em;
+    color: #333;
 }
 
 .crops-list, .all-categories-list {
@@ -212,14 +218,27 @@ body{
 
 .crop-item {
   text-align: center;
+  border-radius: 15px;
+  background-color: white;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .crop-item img {
-  width: 2000px;
-  height: 500px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
+  object-fit: cover;
   border: 1px solid #ddd;
+
 }
+.crop-itemp.category-item p{
+    margin-top:10px ;
+    font-size: 0.9em;
+    color: #555;
+}
+
+
 
 
 .products-section {
