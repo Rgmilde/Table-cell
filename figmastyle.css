@@ -111,8 +111,7 @@ body{
     background-color: #4caf50;
     color: aliceblue;
     padding:  10px 20px;
-     border:none;
-     border-radius: 5px;
+     cursor: pointer;
 }
 .b2:hover{
     border:2px  solid rgb(167, 84, 28);
@@ -123,32 +122,31 @@ body{
     display: flex;
     flex-direction: column;
     text-align: left;
-    height: 100vh; 
-    background-image:  linear-gradient(rgba(0, 0, 0, 0.4), rgba(169, 167, 167, 0.4)),url('bb.jpg'); 
+    height: 50vh; 
+    width: 215vh;
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.4), rgba(169, 167, 167, 0.4)),url('img_1 (1).png'); 
     background-size: cover;
     background-position: center;
     color: white; 
-    padding: 20px;
+    padding: 40px 60px;
     box-sizing: border-box; 
     margin-right: auto;
     margin-left: 0;
+    
 }
+
 
 .c1 h1 {
-    font-size: 3.5rem; 
-    font-weight: bold;
-    margin-bottom: 1rem;
-    
-    letter-spacing: 1px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight:600;
+    line-height:1.2;
+    margin-bottom:5px;
 }
-
 .c1 p {
-    font-size: 1.25rem; 
+    font-size: 1.2rem; 
     max-width: 600px; 
     line-height: 1.5; 
-    margin-bottom: 2rem;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    margin-bottom: 30px;
+    
 }
 
 .cat-buttons {
@@ -157,14 +155,29 @@ body{
     margin-top: 1rem;
 }
 
-.btnshop-now,
-.btnget-started {
+.btnshop-now {
     padding: 1rem 2rem; 
     border-radius: 50px; 
     text-decoration: none; 
     font-weight: bold;
     font-size: 1rem;
     transition: all 0.3s ease; 
+    background-color: green;
+    color: white;
+    border: 2px solid white;
+    
+}
+.btnget-started{
+     padding: 1rem 2rem; 
+    border-radius: 50px; 
+    text-decoration: none; 
+    font-weight: bold;
+    font-size: 1rem;
+    transition: all 0.3s ease; 
+    background-color: white;
+    color: white;
+    border: 2px solid green;
+
 }
 
 
@@ -174,17 +187,24 @@ body{
     border: 2px solid green;
 }
 
+.btnget-started {
+    background-color: white;
+    color: black;
+    border: 2px solid white;
+}
+
+
 .btnshop-now:hover {
     border-color: green;
-    background-color:brown ; 
-    border-color: green;
+    color: white; 
+    border:2px solid white;
 }
 
 
 .btnget-started {
-    background-color: transparent;
-    color: green; 
-    border: 2px solid green; 
+    background-color: #f0f0f0;
+    color: #4caf50;
+    border: 2px solid green;
 }
 
 .btnget-started:hover {
@@ -223,6 +243,8 @@ body{
 .filter-button, .add-crop-button {
     background-color: white;
     border: 1px solid #ddd;
+    width: 115px;
+    height:29.04px;
     padding: 8px 15px;
     border-radius: 20px;
     font-size: 0.9em;
@@ -256,7 +278,7 @@ body{
     flex-wrap: nowrap;
     gap: 20px;
     overflow-x: auto;
-    -webkit-overflow-scrolling: touch; /* iOS smoothness */
+    -webkit-overflow-scrolling: touch; /* iOS smoothness 
     padding: 10px;
 }
 
