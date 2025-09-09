@@ -1,0 +1,42 @@
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+div.header {
+  background-color: #3b3b3b;
+  text-align: center;
+  
+}
+.h1{
+  color: white;
+  padding: 2px;
+}
+.s1{
+  display: flex;
+  padding: auto;
+
+}
+.language-s{background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border: none;
+    padding: 8px 12px ;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    }
+    .flag-icon{
+        width: 24px;
+        height: auto;
+    }
+    
+/*.flag-icon{
+        width: 24px;
+        height: auto;
+        display: flex;
+}*/
