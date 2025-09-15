@@ -3,6 +3,7 @@ body{
     padding: 0px;
 }
 .h1{
+  
     width: 97.2%;
     width:px;
 }
@@ -29,3 +30,10 @@ body{
 .h8{
   width: 97.2%;   
 }
+@media (max-width: 97.2%) {
+    .h1 .h2 .   {
+        display: flex;
+        flex-wrap: wrap;
+    }
+  }
+
