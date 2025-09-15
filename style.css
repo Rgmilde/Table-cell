@@ -1,7 +1,256 @@
-body{
-    background-color: lightblue;
-
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
 }
-h1 {color:navy
-margin - left 20px;
+
+/* Header Section */
+.main-header {
+    background-color: white;
+    padding: 15px 5%;
+}
+
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+/* Search Bar */
+.search-bar-container {
+    display: flex;
+    flex-grow: 1;
+    max-width: 500px;
+    border: 1px solid #c3d21b;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.search-bar-container input {
+    border: none;
+    padding: 10px;
+    flex-grow: 1;
+    outline: none;
+}
+
+.search-button {
+    background-color:;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.search-button .material-symbols-outlined {
+    color: white;
+    font-size: 20px;
+}
+
+/* User Actions */
+.user-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.user-actions .material-symbols-outlined {
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+}
+
+.login-button {
+    background-color: #6a953e;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Main Navigation 
+.main-nav {
+    margin-top: 15px;
+    background-color: #6a953e;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px ;
+    margin: 0;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+.main-nav a:hover {
+    background-color: #5b7c35;
+    border-radius: 15px;
+}
+Main Navigation */
+/*.main-nav {
+    margin-top: 1px;
+    margin-left: 30%;
+    background-color: #6a953e;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+/*.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between; /* space-around की जगह इसका इस्तेमाल करें 
+    padding: 10px;
+    margin: 0;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 15px; /* टेक्स्ट के चारों ओर ज़्यादा जगह देने के लिए पैडिंग बढ़ाएँ 
+    transition: background-color 0.3s;
+}
+
+.main-nav a:hover {
+    background-color: #5b7c35;
+    border-radius: 15px;
+}
+    */
+    <nav class="main-nav">
+    <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
+    <label for="menu-toggle" class="hamburger-icon">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </label>
+
+    <ul class="nav-menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+/* About Section */
+.about-section,
+.farmers-section {
+    padding: 40px 5%;
+    text-align: center;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.about-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.read-more-btn {
+    background-color: #6a953e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+/* Farmers Section */
+.farmers-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.farmer-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.farmer-card:hover {
+    transform: translateY(-5px);
+}
+
+.farmer-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .top-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search-bar-container {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .main-nav {
+        width: 100%;
+        margin-left: 0;
+        border-radius: 0;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-nav a {
+        display: block;
+        padding: 10px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text,
+    .about-image {
+        min-width: unset;
+    }
 }
