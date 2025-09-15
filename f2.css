@@ -1,0 +1,188 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* General Header Styles */
+.main-header {
+    background-color: white; /* Use a light color to match the image */
+    padding: 15px 50px;
+}
+
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Helps with responsiveness */
+}
+
+/* Logo */
+.logo img {
+    height: 50px;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    margin: 0 20px;
+    max-width: 600px;
+}
+
+.search-category {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-bar input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #c3d21b;
+    border-radius: green;
+    border-left: none;}
+    .search-icon{
+
+     padding: 1.2% 1.2%;
+     border-radius: green;
+    
+    border-left: none;
+    
+    background-color: #fff;
+    
+}
+
+
+/*.search-button {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-radius: 0 5px 5px 0;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+/* User Actions (Icons & Login) */
+.user-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.user-actions .icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.login-button {
+    background-color: #5cb85c; /* Light green */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Main Navigation */
+.main-nav {
+    margin-top: 1%;
+    background-color: #6a953e; /* Dark green */
+    padding: 5px;
+    border-radius: 20px;
+    width: 45%;
+    margin-left: 25%;
+    padding-right: 2%;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 0;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 5px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .top-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search-bar {
+        width: 100%;
+        margin-top: 15px;
+        order: 3; /* Search bar ko niche laane ke liye */
+    }
+
+    .user-actions {
+        margin-top: 15px;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-nav a {
+        display: block;
+        padding: 10px;
+    }
+}
+
+.about-section,
+.about-image,
+.farmers-section,
+.blogs-section,
+.footer-section {
+    padding: 20px;
+    text-align: center;
+}
+.about-imag{
+    width: 99%;
+}
+/* Farmers aur blogs ke cards ko responsive banane ke liye Flexbox ka istemal */
+.farmers-container
+ {
+    display: flex;
+    justify-content: center;
+    gap: px;
+    flex-wrap: wrap; /* Jab screen choti ho, to cards automatically niche aa jayenge */
+    
+}
+
+.farmer-card,
+.blog-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    width: 99%; /* Cards ki default width */
+    text-align: center;
+}
+
+.farmer-card img,
+.blog-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Mobile Devices ke liye */
+@media (max-width: 768px) {
+    .farmers-container,
+    .blogs-container {
+        flex-direction: column; /* Phone par cards ko upar se niche dikhayein */
+        align-items: center;
+    }
+
+    .farmer-card,
+    .blog-card {
+        width: 90%; /* Phone par cards ki width badha dein */
+    }
+}
