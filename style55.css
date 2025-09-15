@@ -1,0 +1,184 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* General Header Styles */
+.main-header {
+    background-color: white;
+    padding: 15px 50px;
+    position: relative; /* For positioning the hamburger icon */
+}
+
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Logo */
+.logo img {
+    height: 50px;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    margin: 0 20px;
+    max-width: 600px;
+}
+
+.search-bar-image {
+    width: 100%;
+    height: auto;
+}
+
+/* User Actions (Icons & Login) */
+.user-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.user-actions-image {
+    height: 30px; /* Adjust size as needed */
+}
+
+.login-button {
+    background-color: #5cb85c;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Main Navigation */
+.main-nav {
+    margin-top: 1%;
+    background-color: #6a953e;
+    padding: 5px;
+    border-radius: 20px;
+    width: 45%;
+    margin-left: 25%;
+    padding-right: 2%;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 0;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 5px;
+}
+
+/* Hide the checkbox */
+.menu-toggle-checkbox {
+    display: none;
+}
+
+/* Style the hamburger icon bars */
+.hamburger-icon {
+    display: none; /* Default mein hide rakhen */
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 10;
+}
+
+.hamburger-icon .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #6a953e; /* Hamburger icon ka color */
+    transition: all 0.3s ease-in-out;
+}
+
+/* Sections below header */
+.about-section,
+.farmer-card {
+    padding: 20px;
+    text-align: center;
+}
+
+.about-image {
+    width: 99%;
+}
+
+.farmer-image {
+    width: 99%;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .top-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search-bar {
+        width: 100%;
+        margin-top: 15px;
+        order: 3;
+    }
+
+    .user-actions {
+        margin-top: 15px;
+    }
+    
+    .main-nav {
+        width: 100%;
+        margin-left: 0;
+        padding-right: 0;
+        position: relative;
+        background-color: transparent;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        background-color: #6a953e;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        transition: all 0.3s ease-in-out;
+        padding: 20px 0;
+        text-align: center;
+        z-index: 5;
+    }
+
+    .menu-toggle-checkbox:checked ~ .nav-menu {
+        left: 0;
+    }
+
+    .hamburger-icon {
+        display: block;
+    }
+    
+    .menu-toggle-checkbox:checked + .hamburger-icon .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    .menu-toggle-checkbox:checked + .hamburger-icon .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .menu-toggle-checkbox:checked + .hamburger-icon .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    .farmer-card,
+    .about-section {
+        width: 100%;
+        padding: 10px;
+    }
+}
