@@ -1,6 +1,22 @@
-.body{
-
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff;
 }
-.h1{
-    width: 99.2%;
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+/* Media Query for responsiveness */
+@media (max-width: 768px) {
+    .main-nav {
+        display: none; /* Hide the main navigation on small screens */
+    }
+
+    /* You would add a hamburger menu icon here and JavaScript to toggle it */
 }
