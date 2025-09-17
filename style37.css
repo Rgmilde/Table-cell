@@ -1,0 +1,50 @@
+/* Basic styles for the entire page */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Section */
+.header {
+    background-color: rgba(25, 24, 24, 0.765);
+    padding:20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(204, 38, 38, 0.1);
+}
+
+/* Hero Section */
+.hero-section {
+    background: url('your-image-url.jpg') no-repeat center center/cover;
+    color: rgb(14, 44, 143);
+    text-align: center;
+    padding: 150px 20px;
+}
+
+/* General Section Styling */
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Product Card Styling (common for many sections) */
+.product-card {
+    border: 1px solid #bd0e74;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px;
+    display: inline-block; /* Or use flexbox for better alignment */
+    width: 200px;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #1a1a1a;
+    color: #1b106f;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-around;
+}
