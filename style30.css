@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.main-header {
+    background-color: white;
+    padding: 15px 50px;
+    position: relative; /* For positioning the hamburger icon */
+}
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/* Logo */
+.logo img {
+    height: 50px;
+    
+}
+.search-bar {
+    flex: 1;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    border: 1px solid hsl(110, 46%, 23%);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.search-bar select {
+    border: none;
+    padding: 10px;
+    outline: none;
+    background-color: #f5f5f5;
+}
+
+.search-bar input {
+    border: none;
+    padding: 10px;
+    flex: 1;
+    outline: none;
+}
+
+.search-bar button {
+    background-color: #f9f9f9fc;
+    border: none;
+    padding: 10px 15px;
+    color: rgb(14, 15, 14);
+    cursor: pointer;
+}
+.header-icons {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.header-icons i {
+    font-size: 25px;
+    cursor: pointer;
+    margin-right: px;
+}
+
+.login-btn {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.main-nav {
+    margin-top: 1%;
+    background-color: #6a953e;
+    padding: 2px;
+    border-radius: 20px;
+    width: 35%;
+    margin-left: 31%;
+    padding-right: -1%;
+}
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 2px 5px;
+    padding-right: 2px;
+}
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 5px;
+}
+/* Sections below header */
+.about-section,
+.farmer-card {
+    padding: 20px;
+    text-align: center;
+}
+
+.about-text{
+    padding-left: 5%;
+
+}
+
+.a2{
+    color: green;
+}
+.a3{
+    color: gray;
+    font-size: 11px;
+}
+.a4{
+    height: 5%;
+    width: 30%;
+}
+.a5{
+    background-image: url('117-1171543_3-green-leaves-in-a-circle-logo-leaf-branch-clip-art 1 (1).png');
+}
+
+.about-c {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    height: 20px;
+    max-width: 25%;
+
+}
+
+.farmer-image {
+    width: 99%;
+}
